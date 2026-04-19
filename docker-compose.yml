@@ -5,6 +5,9 @@ services:
     restart: unless-stopped
     ports:
       - "5000:5000"
+    environment:
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin123}
+      - SECRET_KEY=${SECRET_KEY:-uptime-notifier-secret}
     volumes:
       - ./channels.json:/app/channels.json
     networks:
