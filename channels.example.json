@@ -1,0 +1,12 @@
+{
+  "nome-do-canal": {
+    "bot_token": "SEU_BOT_TOKEN_AQUI",
+    "chat_id": "-100XXXXXXXXXX",
+    "protect_content": true
+  },
+  "outro-canal": {
+    "bot_token": "SEU_BOT_TOKEN_AQUI",
+    "chat_id": "-100XXXXXXXXXX",
+    "protect_content": false
+  }
+}

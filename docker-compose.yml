@@ -1,0 +1,16 @@
+services:
+  uptime-notifier:
+    build: .
+    container_name: uptime-notifier
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./channels.json:/app/channels.json
+    networks:
+      - uptime-net
+
+networks:
+  uptime-net:
+    name: uptime-net
+    external: true
