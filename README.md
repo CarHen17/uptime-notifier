@@ -9,7 +9,7 @@ Serviço intermediário que recebe webhooks do Uptime Kuma e envia mensagens for
 O Uptime Kuma envia notificações com o output técnico bruto do ping:
 
 ```
-[RB - VILLEFIBRA] [🔴 Down] PING 168.181.111.128 56(84) bytes of data.
+[RB - VILLEFIBRA] [🔴 Down] PING 1.1.1.1 56(84) bytes of data.
 10 packets transmitted, 0 received, 100% packet loss
 ```
 
