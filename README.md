@@ -1,4 +1,4 @@
-# Uptime Notifier — Notificações Profissionais para Uptime Kuma
+# Uptime Notifier — Notificações para Uptime Kuma
 
 Serviço intermediário que recebe webhooks do Uptime Kuma e envia mensagens formatadas para o Telegram.
 
