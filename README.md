@@ -18,8 +18,8 @@ Com o Uptime Notifier, a mensagem chega assim:
 ```
 🔴 ALERTA DE QUEDA
 
-📍 Monitor: RB - VILLEFIBRA
-🌐 Host: 168.181.111.128
+📍 Monitor: CLOUDFLARE
+🌐 Host: 1.1.1.1
 📊 Status: OFFLINE
 📅 19/04/2026 às 18:05
 
