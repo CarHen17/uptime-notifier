@@ -9,7 +9,7 @@ Serviço intermediário que recebe webhooks do Uptime Kuma e envia mensagens for
 O Uptime Kuma envia notificações com o output técnico bruto do ping:
 
 ```
-[RB - VILLEFIBRA] [🔴 Down] PING 1.1.1.1 56(84) bytes of data.
+[RB - CLIENTE A] [🔴 Down] PING 192.168.1.1 56(84) bytes of data.
 10 packets transmitted, 0 received, 100% packet loss
 ```
 
@@ -18,10 +18,10 @@ Com o Uptime Notifier, a mensagem chega assim:
 ```
 🔴 ALERTA DE QUEDA
 
-📍 Monitor: CLOUDFLARE
-🌐 Host: 1.1.1.1
+📍 Monitor: RB - CLIENTE A
+🌐 Host: 192.168.1.1
 📊 Status: OFFLINE
-📅 19/04/2026 às 18:05
+📅 01/01/2025 às 10:00
 
 ━━━━━━━━━━━━━━━
 ⚡ Monitoramento Automático
@@ -135,12 +135,11 @@ Para cada monitor, você vai adicionar uma notificação do tipo **Webhook**:
 
 ### Exemplos de URLs
 
-| Canal             | URL do Webhook                                      |
-|-------------------|-----------------------------------------------------|
-| tellenet          | `http://uptime-notifier:5000/webhook/tellenet`      |
-| def-telecom       | `http://uptime-notifier:5000/webhook/def-telecom`   |
-| buritinet         | `http://uptime-notifier:5000/webhook/buritinet`     |
-| ville-jao         | `http://uptime-notifier:5000/webhook/ville-jao`     |
+| Canal             | URL do Webhook                                          |
+|-------------------|---------------------------------------------------------|
+| cliente-a         | `http://uptime-notifier:5000/webhook/cliente-a`         |
+| cliente-b         | `http://uptime-notifier:5000/webhook/cliente-b`         |
+| provedor-fibra    | `http://uptime-notifier:5000/webhook/provedor-fibra`    |
 
 > A URL usa o nome do container `uptime-notifier` porque ambos estão na mesma rede Docker (`uptime-net`).
 
